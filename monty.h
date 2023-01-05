@@ -54,6 +54,7 @@ void malloc_error(void);
  */
 void pint_error(unsigned int line);
 void pop_error(unsigned int line);
+void swap_error(unsigned int line);
 
 /**
  * Executer
@@ -84,5 +85,12 @@ void pall_stack(stack_t **top, __attribute__((unused))unsigned int line_number);
 void free_stack(stack_t *top);
 void pint_stack(stack_t **top, unsigned int line_number);
 void pop_stack(stack_t **top, unsigned int line_number);
+
+/**
+ * operations2
+ */
+void swap(stack_t **top, unsigned int line_number);
+void nop(__attribute__((unused))stack_t **top, 
+__attribute__((unused))unsigned int line_number);
 
 #endif
