@@ -19,7 +19,7 @@ void open_and_read(char **argv)
         open_error(argv);
     while ((line_size = getline(&buf, &len, fp)) != EOF)
     {
-        token = strtok(buf, "\n\t\r ");
+        token = strtok(buf, " \n");
         if (*token == '\0')
             continue;
         strcpy(command, token);
@@ -27,7 +27,7 @@ void open_and_read(char **argv)
             continue;
         if (strcmp(token, "push") == 0)
         {
-            token = strtok(NULL, "\n\t\r ");
+            token = strtok(NULL, " \n");
             if (!token || is_number(token) == -1)
                 not_int_err(line_counter);
             number = atoi(token);
