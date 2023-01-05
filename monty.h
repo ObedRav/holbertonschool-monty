@@ -8,7 +8,7 @@
 
 #define MAX 1024
 
-extern int n;
+extern int number;
 
 /**
  * struct stack_s - doubly linked list representation of a stack (or queue)
@@ -70,8 +70,8 @@ void (*get_op_code(char *token, unsigned int line))(stack_t **, unsigned int);
 /**
  * operations
  */
-void push_stack(stack_t **top, __attribute__((unused)) unsigned int line_number);
-void pall_stack(stack_t **top, __attribute__((unused)) unsigned int line_number);
+void push_stack(stack_t **top, __attribute__((unused))unsigned int line_number);
+void pall_stack(stack_t **top, __attribute__((unused))unsigned int line_number);
 void free_stack(stack_t *top);
 
 #endif

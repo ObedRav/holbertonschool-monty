@@ -4,6 +4,7 @@
  * get_op_code - contain the finction that will perfom to the operation
  * @token: the operation
  * @line: line readed
+ * Return: NULL
  */
 void (*get_op_code(char *token, unsigned int line))(stack_t **, unsigned int)
 {
@@ -20,4 +21,5 @@ void (*get_op_code(char *token, unsigned int line))(stack_t **, unsigned int)
 			return (operations[i].f);
 	}
 	invalidInstruction_error(token, line);
+	return (NULL);
 }
