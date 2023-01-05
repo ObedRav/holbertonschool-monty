@@ -23,8 +23,10 @@ void open_and_read(char **argv)
 	{
 		token = strtok(buf, " \n\t\r");
 		if (token == NULL || *token == '\0')
+		{
 			line_counter++;
 			continue;
+		}
 		_strcpy(command, token);
 		if (is_comment(token, line_counter) == 1)
 			continue;
