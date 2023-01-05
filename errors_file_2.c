@@ -31,11 +31,21 @@ void swap_error(unsigned int line)
 }
 
 /**
- * add - print err msg
+ * add_error - print err msg
  * @line: line
  */
 void add_error(unsigned int line)
 {
 	fprintf(stderr, "L%u: can't add, stack too short\n", line);
+	exit(1);
+}
+
+/**
+ * sub_error - print err msg
+ * @line: line
+ */
+void sub_error(unsigned int line)
+{
+	fprintf(stderr, "L%u: can't sub, stack too short\n", line);
 	exit(1);
 }

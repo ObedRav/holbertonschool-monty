@@ -56,6 +56,14 @@ void pint_error(unsigned int line);
 void pop_error(unsigned int line);
 void swap_error(unsigned int line);
 void add_error(unsigned int line);
+void sub_error(unsigned int line);
+
+/**
+ * errors_file_2
+ */
+void div_error(unsigned int line);
+void mul_error(unsigned int line);
+void mod_error(unsigned int line);
 
 /**
  * Executer
@@ -94,5 +102,13 @@ void swap(stack_t **top, unsigned int line_number);
 void nop(__attribute__((unused))stack_t **top, 
 __attribute__((unused))unsigned int line_number);
 void add(stack_t **top, unsigned int line_number);
+void sub(stack_t **top, unsigned int line_number);
+void div(stack_t **top, unsigned int line_number);
+
+/**
+ * operations3
+ */
+void mul(stack_t **top, unsigned int line_number);
+void mod(stack_t **top, unsigned int line_number);
 
 #endif

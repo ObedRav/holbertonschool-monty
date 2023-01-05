@@ -44,3 +44,37 @@ void add(stack_t **top, unsigned int line_number)
 	tmp->n += (*top)->n;
 	pop_stack(top, line_number);
 }
+
+/**
+ * sub - sub the top two elements of the stack
+ * @top: top of stack
+ * @line_number: constant int value in the structure
+ */
+void sub(stack_t **top, unsigned int line_number)
+{
+	stack_t *tmp;
+
+	if (!*top || !(*top)->next)
+		sub_error(line_number);
+
+	tmp = (*top)->next;
+	tmp->n -= (*top)->n;
+	pop_stack(top, line_number);
+}
+
+/**
+ * div - div the top two elements of the stack
+ * @top: top of stack
+ * @line_number: constant int value in the structure
+ */
+void div(stack_t **top, unsigned int line_number)
+{
+	stack_t *tmp;
+
+	if (!*top || !(*top)->next)
+		div_error(line_number);
+
+	tmp = (*top)->next;
+	tmp->n /= (*top)->n;
+	pop_stack(top, line_number);
+}

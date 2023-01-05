@@ -17,6 +17,10 @@ void (*get_op_code(char *token, unsigned int line))(stack_t **, unsigned int)
 		{"swap", swap},
 		{"nop", nop},
 		{"add", add},
+		{"sub", sub},
+		{"mod", mod},
+		{"div", div},
+		{"mul", mul},
 		{NULL, NULL}
 	};
 
