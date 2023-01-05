@@ -64,3 +64,35 @@ void free_stack(stack_t *top)
 	}
 	free(top);
 }
+
+/**
+ * pint_stack - Function that print the valueat top of stack
+ * @top: element at the top of the stack (head)
+ * @line_number: constant int value in the structure
+ */
+void pint_stack(stack_t **top, unsigned int line_number)
+{
+	stack_t *tmp = *top;
+
+	if (tmp)
+		printf("%d\n", tmp->n);
+	else
+		pint_error(line_number);
+}
+
+/**
+ * pop_stack - Function that pop (delete) the value at top of stack
+ * @top: element at the top of the stack (head)
+ * @line_number: constant int value in the structure
+ */
+void pop_stack(stack_t **top, unsigned int line_number)
+{
+	stack_t *tmp = *top;
+
+	if (!*top)
+		pop_error(line_number);
+
+	*top = (*top)->next;
+	free(tmp);
+	tmp = NULL;
+}
