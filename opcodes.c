@@ -19,7 +19,7 @@ void (*get_op_code(char *token, unsigned int line))(stack_t **, unsigned int)
 		{"add", add},
 		{"sub", sub},
 		{"mod", mod},
-		{"div", div},
+		{"div", division},
 		{"mul", mul},
 		{NULL, NULL}
 	};

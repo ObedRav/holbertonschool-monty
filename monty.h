@@ -103,7 +103,7 @@ void nop(__attribute__((unused))stack_t **top,
 __attribute__((unused))unsigned int line_number);
 void add(stack_t **top, unsigned int line_number);
 void sub(stack_t **top, unsigned int line_number);
-void div(stack_t **top, unsigned int line_number);
+void division(stack_t **top, unsigned int line_number);
 
 /**
  * operations3

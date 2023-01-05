@@ -67,7 +67,7 @@ void sub(stack_t **top, unsigned int line_number)
  * @top: top of stack
  * @line_number: constant int value in the structure
  */
-void div(stack_t **top, unsigned int line_number)
+void division(stack_t **top, unsigned int line_number)
 {
 	stack_t *tmp;
 
