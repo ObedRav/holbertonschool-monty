@@ -6,8 +6,8 @@
  */
 void error_arguments(void)
 {
-    fprintf(stderr, "USAGE: monty file\n");
-    exit(1);
+	fprintf(stderr, "USAGE: monty file\n");
+	exit(1);
 }
 
 /**
@@ -24,7 +24,8 @@ void open_error(char **argv)
 }
 
 /**
- * invalidInstruction_error - print message if le to open the filehas an invalid instruction
+ * invalidInstruction_error - print message if le to open the
+ * filehas an invalid instruction
  * @invInstruction: instruction
  * @line: line
  */

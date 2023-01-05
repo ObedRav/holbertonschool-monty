@@ -6,7 +6,7 @@
  */
 int isEmpty(stack_t *top)
 {
-    if (!top)
+	if (!top)
 		return (1);
 	return (0);
-} 
+}

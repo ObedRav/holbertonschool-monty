@@ -2,6 +2,8 @@
 
 /**
  * main - main program
+ * @argc: total of arguments
+ * @argv: The arguments, monty files
  * Return: 0 on success
  */
 int main(int argc, char **argv)

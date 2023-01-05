@@ -1,12 +1,13 @@
 #include "monty.h"
 int number;
+
 /**
  * open_and_read - open a file, and read and execute
  * @argv: arguments received
  */
 void open_and_read(char **argv)
 {
-    void (*p_func)(stack_t **, unsigned int);
+	void (*p_func)(stack_t **, unsigned int);
 	FILE *fp;
 	char *buf = NULL, *token = NULL, command[MAX];
 	size_t len = 0;
@@ -14,37 +15,38 @@ void open_and_read(char **argv)
 	unsigned int line_counter = 1;
 	stack_t *top = NULL;
 
-    fp = fopen(argv[1], "r");
-    if (!fp)
-        open_error(argv);
-    while ((line_size = getline(&buf, &len, fp)) != EOF)
-    {
-        token = strtok(buf, " \n\t\r");
-        if (token == NULL || *token == '\0')
-            continue;
-        strcpy(command, token);
-        if (is_comment(token, line_counter) == 1)
-            continue;
-        if (strcmp(token, "push") == 0)
-        {
-            token = strtok(NULL, " \n\t\r");
-            if (!token || is_number(token) == -1)
-                not_int_err(line_counter);
-            number = atoi(token);
-            p_func = get_op_code(command, line_counter);
-            p_func(&top, line_counter);
-        }
-        else
-        {
-            p_func = get_op_code(token, line_counter);
-            p_func(&top, line_counter);
-        }
-        line_counter++;
-    }
-    fclose(fp);
-    if (buf)
-        free(buf);
-    free_stack(top);
+	fp = fopen(argv[1], "r");
+	if (!fp)
+		open_error(argv);
+
+	while ((line_size = getline(&buf, &len, fp)) != -1)
+	{
+		token = strtok(buf, " \n\t\r");
+		if (token == NULL || *token == '\0')
+			continue;
+		strcpy(command, token);
+		if (is_comment(token, line_counter) == 1)
+			continue;
+		if (strcmp(token, "push") == 0)
+		{
+			token = strtok(NULL, " \n\t\r");
+			if (!token || is_number(token) == -1)
+				not_int_err(line_counter);
+			number = atoi(token);
+			p_func = get_op_code(command, line_counter);
+			p_func(&top, line_counter);
+		}
+		else
+		{
+			p_func = get_op_code(token, line_counter);
+			p_func(&top, line_counter);
+		}
+		line_counter++;
+	}
+	fclose(fp);
+	if (buf)
+		free(buf);
+	free_stack(top);
 }
 
 /**
@@ -77,8 +79,8 @@ int is_comment(char *token, int line_counter)
 {
 	if (token == NULL || token[0] == '#')
 	{
-	    line_counter++;
-	    return (1);
+		line_counter++;
+		return (1);
 	}
 	return (-1);
 }

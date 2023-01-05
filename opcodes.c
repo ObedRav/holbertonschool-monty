@@ -7,18 +7,17 @@
  */
 void (*get_op_code(char *token, unsigned int line))(stack_t **, unsigned int)
 {
-    int i;
-    instruction_t operations[] = {
-        {"push", push_stack},
+	int i;
+	instruction_t operations[] = {
+		{"push", push_stack},
 		{"pall", pall_stack},
-        {NULL, NULL}
-    };
+		{NULL, NULL}
+	};
 
-    for (i = 0; operations[i].opcode != NULL; i++)
-    {
-        if (strcmp(operations[i].opcode, token) == 0)
-            return (operations[i].f);
-    }
-    invalidInstruction_error(token, line);
-    return (NULL);
+	for (i = 0; operations[i].opcode != NULL; i++)
+	{
+		if (strcmp(operations[i].opcode, token) == 0)
+			return (operations[i].f);
+	}
+	invalidInstruction_error(token, line);
 }
