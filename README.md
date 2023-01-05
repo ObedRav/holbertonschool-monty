@@ -1,9 +1,13 @@
 # MONTY
 
+<p align="center">
+ <img src= "https://pbs.twimg.com/media/CFYYWy6UEAE9Ow-.png" width="600" height="350" />
+
 ## Description
 Monty 0.98 is a scripting language that is first compiled into Monty byte codes (Just like Python). It relies on a unique stack, with specific instructions to manipulate it. The goal of this project is to create an interpreter for Monty ByteCodes files.
 
-![alt text](./Stack_and_Queues.jpg)
+ <p align="center">
+ <img src="https://github.com/ObedRav/holbertonschool-monty/blob/main/Stack_and_Queues.jpg" />
 
 ## List of Files
 
@@ -18,6 +22,30 @@ Monty 0.98 is a scripting language that is first compiled into Monty byte codes 
 |[executer.c](./executer.c) | Contains the functions to open and read the file to execute|
 |[opcodes.c](./opcodes.c) | Contains the functions to call the functions to be execute|
 |[helper_functions.c](./herlper_functions.c) | Contains the functions like _strcmp and others, to be called in another file|
+
+## Formatting and Examples
+
+Format for user to write in "testfile.m":
+`opcode argument`
+
+Examples:
+`$ cat opcodetestfile.m`
+
+`push 1`
+
+`push 2`
+
+`push 3`
+
+`pall`
+
+`$ ./montyfile opcodetestfile.m`
+
+`3`
+
+`2`
+
+`1`
 
 ## Allowable opcodes and what they do
 | opcode | functionality |
