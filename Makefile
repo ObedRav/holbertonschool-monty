@@ -1,7 +1,7 @@
 CC = gcc
 SPC = *.c
 OBJ = $(SRC:.c=.o)
-NAME = hsh
+NAME = monty
 RM = rm -f
 CFLAGS = -Wall -Werror -Wextra -pedantic
 
