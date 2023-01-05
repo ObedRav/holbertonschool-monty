@@ -74,6 +74,9 @@ void division(stack_t **top, unsigned int line_number)
 	if (!*top || !(*top)->next)
 		div_error(line_number);
 
+	if ((*top)->n == 0)
+		div_zero_error(line_number);
+
 	tmp = (*top)->next;
 	tmp->n /= (*top)->n;
 	pop_stack(top, line_number);

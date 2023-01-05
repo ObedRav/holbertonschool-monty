@@ -30,3 +30,13 @@ void mod_error(unsigned int line)
 	exit(1);
 }
 
+/**
+ * div_zero_error - print err msg
+ * @line: line
+ */
+void div_zero_error(unsigned int line)
+{
+	fprintf(stderr, "L%u: division by zero\n", line);
+	exit(1);
+}
+

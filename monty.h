@@ -59,11 +59,12 @@ void add_error(unsigned int line);
 void sub_error(unsigned int line);
 
 /**
- * errors_file_2
+ * errors_file_3
  */
 void div_error(unsigned int line);
 void mul_error(unsigned int line);
 void mod_error(unsigned int line);
+void div_zero_error(unsigned int line);
 
 /**
  * Executer
