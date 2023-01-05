@@ -19,6 +19,22 @@ Monty 0.98 is a scripting language that is first compiled into Monty byte codes 
 |[opcodes.c](./opcodes.c) | Contains the functions to call the functions to be execute|
 |[helper_functions.c](./herlper_functions.c) | Contains the functions like _strcmp and others, to be called in another file|
 
+## Allowable opcodes and what they do
+| opcode | functionality |
+| --- | --- |
+| push | add element to the 'top' of stack and 'end' of queue |
+| pop | remove element from 'top' of stack and 'end' of queue|
+| pall | print every member of the structure |
+| pint | prints the member value at the top of stack |
+| swap | swaps the order  of the 1st and 2nd elements in stack |
+| add | add top two member values |
+| sub | subtract the top element from the 2nd top element |
+| div | divide the 2nd element by the top element |
+| mul | multiply the top two elements of the stack |
+| mod | the remainder when the 2nd element is divided by the top element |
+| comment | there is the ability to parse comments found in bytecode ->'#'|
+| nop | opcode should do nothing |
+
 ## Bugs
 If you find any bug, please, let me know.
 
