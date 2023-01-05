@@ -6,6 +6,8 @@
 #include <string.h>
 #include <ctype.h>
 
+#define MAX 1024
+
 extern int n;
 
 /**

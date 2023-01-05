@@ -8,7 +8,7 @@ void open_and_read(char **argv)
 {
     void (*p_func)(stack_t **, unsigned int);
 	FILE *fp;
-	char *buf = NULL, *token = NULL, command[1024];
+	char *buf = NULL, *token = NULL, command[MAX];
 	size_t len = 0;
 	ssize_t line_size;
 	unsigned int line_counter = 1;
