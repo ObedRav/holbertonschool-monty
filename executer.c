@@ -18,7 +18,6 @@ void open_and_read(char **argv)
 	fp = fopen(argv[1], "r");
 	if (!fp)
 		open_error(argv);
-
 	while ((line_size = getline(&buf, &len, fp)) != -1)
 	{
 		token = strtok(buf, " \n\t\r");
@@ -31,8 +30,7 @@ void open_and_read(char **argv)
 		if (is_comment(token, line_counter) == 1)
 			continue;
 		if (_strcmp(token, "push") == 0)
-		{
-			token = strtok(NULL, " \n\t\r");
+		{	token = strtok(NULL, " \n\t\r");
 			if (!token || is_number(token) == -1)
 				not_int_err(line_counter);
 			number = atoi(token);
@@ -45,8 +43,7 @@ void open_and_read(char **argv)
 			p_func(&top, line_counter);
 		}
 		line_counter++;
-	}
-	fclose(fp);
+	} fclose(fp);
 	if (buf)
 		free(buf);
 	free_stack(top);

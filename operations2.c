@@ -7,14 +7,14 @@
  */
 void swap(stack_t **top, unsigned int line_number)
 {
-    int data;
+	int data;
 
-    if (!*top || !(*top)->next)
-        swap_error(line_number);
-    
-    data = (*top)->n;
-    (*top)->n = (*top)->next->n;
-    (*top)->next->n = data;
+	if (!*top || !(*top)->next)
+		swap_error(line_number);
+
+	data = (*top)->n;
+	(*top)->n = (*top)->next->n;
+	(*top)->next->n = data;
 }
 
 /**
@@ -22,7 +22,7 @@ void swap(stack_t **top, unsigned int line_number)
 * @top: top of stack
  * @line_number: constant int value in the structure
  */
-void nop(__attribute__((unused))stack_t **top, 
+void nop(__attribute__((unused))stack_t **top,
 __attribute__((unused))unsigned int line_number)
 {
 
@@ -35,12 +35,12 @@ __attribute__((unused))unsigned int line_number)
  */
 void add(stack_t **top, unsigned int line_number)
 {
-    stack_t *tmp;
+	stack_t *tmp;
 
-    if (!*top || !(*top)->next)
-        add_error(line_number);
+	if (!*top || !(*top)->next)
+		add_error(line_number);
 
-    tmp = (*top)->next;
-    tmp->n += (*top)->n;
-    pop_stack(top, line_number);
+	tmp = (*top)->next;
+	tmp->n += (*top)->n;
+	pop_stack(top, line_number);
 }
