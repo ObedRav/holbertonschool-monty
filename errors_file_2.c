@@ -30,6 +30,10 @@ void swap_error(unsigned int line)
 	exit(1);
 }
 
+/**
+ * add - print err msg
+ * @line: line
+ */
 void add_error(unsigned int line)
 {
 	fprintf(stderr, "L%u: can't add, stack too short\n", line);
