@@ -24,10 +24,10 @@ void open_and_read(char **argv)
 		token = strtok(buf, " \n\t\r");
 		if (token == NULL || *token == '\0')
 			continue;
-		strcpy(command, token);
+		_strcpy(command, token);
 		if (is_comment(token, line_counter) == 1)
 			continue;
-		if (strcmp(token, "push") == 0)
+		if (_strcmp(token, "push") == 0)
 		{
 			token = strtok(NULL, " \n\t\r");
 			if (!token || is_number(token) == -1)
@@ -63,7 +63,7 @@ int is_number(char *token)
 
 	for (i = 0; token[i] != '\0'; i++)
 	{
-		if (token[i] != '-' && isdigit(token[i]) == 0)
+		if (token[i] != '-' && _isdigit(token[i]) == 0)
 			return (-1);
 	}
 	return (1);

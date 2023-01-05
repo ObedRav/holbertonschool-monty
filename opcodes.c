@@ -17,7 +17,7 @@ void (*get_op_code(char *token, unsigned int line))(stack_t **, unsigned int)
 
 	for (i = 0; operations[i].opcode != NULL; i++)
 	{
-		if (strcmp(operations[i].opcode, token) == 0)
+		if (_strcmp(operations[i].opcode, token) == 0)
 			return (operations[i].f);
 	}
 	invalidInstruction_error(token, line);

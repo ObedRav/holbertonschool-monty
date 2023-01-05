@@ -61,6 +61,9 @@ int is_comment(char *token, int line_counter);
  * helper_functions
  */
 int isEmpty(stack_t *top);
+int _isdigit(int c);
+int _strcmp(char *s1, char *s2);
+char *_strcpy(char *dest, char *src);
 
 /**
  * opcodes
