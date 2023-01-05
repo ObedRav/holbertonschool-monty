@@ -49,7 +49,7 @@ Examples:
 
 ## Allowable opcodes and what they do
 | opcode | functionality |
-| --- | --- |
+|---------------- | -----------|
 | push | add element to the 'top' of stack and 'end' of queue |
 | pop | remove element from 'top' of stack and 'end' of queue|
 | pall | print every member of the structure |
@@ -64,7 +64,7 @@ Examples:
 | nop | opcode should do nothing |
 
 ## Bugs
-If you find any bug, please, let me know.
+If you find any bug, please, let us know.
 
 ## Authors
 * **Obed Rayo** [Github](https://github.com/ObedRav)
