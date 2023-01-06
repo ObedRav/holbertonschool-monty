@@ -70,7 +70,10 @@ void pstr(stack_t **top, __attribute__((unused))unsigned int line_number)
 	int ascii;
 
 	if(isEmpty(*top))
+	{
 		putchar('\n');
+		return;
+	}
 
 	tmp = *top;
 	while (tmp)
@@ -92,6 +95,9 @@ void pstr(stack_t **top, __attribute__((unused))unsigned int line_number)
 void rotl(stack_t **top, unsigned int line_number)
 {
 	stack_t *tmp, *new;
+
+	if(isEmpty(*top) || isEmpty((*top)->next))
+		return;
 
 	new = malloc(sizeof(stack_t));
 	new->n = (*top)->n;
