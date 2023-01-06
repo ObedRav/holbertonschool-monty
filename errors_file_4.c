@@ -6,6 +6,6 @@
  */
 void ascii_error(unsigned int line)
 {
-    fprintf(stderr, "L%u can't pchar, value out of range\n", line);
+    fprintf(stderr, "L%u: can't pchar, value out of range\n", line);
     exit(1);
 }

@@ -51,7 +51,7 @@ void pchar(stack_t **top, unsigned int line_number)
 
 	ascii = (*top)->n;
 
-	if (ascii > 255 || ascii < 0)
+	if (ascii > 127 || ascii < 0)
 		ascii_error(line_number);
 
 	putchar(ascii);
