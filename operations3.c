@@ -55,5 +55,5 @@ void pchar(stack_t **top, unsigned int line_number)
 		ascii_error(line_number);
 
 	putchar(ascii);
-	putchar("\n");
+	putchar('\n');
 }
