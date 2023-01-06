@@ -9,6 +9,9 @@ void rotr(stack_t **top, __attribute__((unused))unsigned int line_number)
 {
     stack_t *tmp;
 
+    if(isEmpty(*top) || isEmpty((*top)->next))
+		return;
+        
     tmp = (*top);
     while (tmp->next)
         tmp = tmp->next;
