@@ -65,6 +65,12 @@ void div_error(unsigned int line);
 void mul_error(unsigned int line);
 void mod_error(unsigned int line);
 void div_zero_error(unsigned int line);
+void pchar_error(unsigned int line);
+
+/**
+ * errors_file_4
+ */
+void ascii_error(unsigned int line);
 
 /**
  * Executer

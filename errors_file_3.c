@@ -40,3 +40,12 @@ void div_zero_error(unsigned int line)
 	exit(1);
 }
 
+/**
+ * pchar_error - print err msg
+ * @line: line
+ */
+void pchar_error(unsigned int line)
+{
+	fprintf(stderr, "L%u: can't pchar, stack empty\n", line);
+	exit(1);
+}
