@@ -57,3 +57,53 @@ void pchar(stack_t **top, unsigned int line_number)
 	putchar(ascii);
 	putchar('\n');
 }
+
+/**
+ * pstr - prints the string starting at the top of the stack,
+ * followed by a new line
+ * @top: top of stack
+ * @line_number: constant int value in the structure
+ */ 
+void pstr(stack_t **top, __attribute__((unused))unsigned int line_number)
+{
+	stack_t *tmp;
+	int ascii;
+
+	if(isEmpty(*top))
+		putchar('\n');
+
+	tmp = *top;
+	while (tmp)
+	{
+		ascii = tmp->n;
+		if (ascii > 127 || ascii <= 0)
+			break;
+		putchar(ascii);
+		tmp = tmp->next;
+	}
+	putchar('\n');
+}
+
+/**
+ * rotl - rotates the stack to the top
+ * @top: top of stack
+ * @line_number: constant int value in the structure
+ */
+void rotl(stack_t **top, unsigned int line_number)
+{
+	stack_t *tmp, *new;
+
+	new = malloc(sizeof(stack_t));
+	new->n = (*top)->n;
+	new->prev = NULL;
+	new->next = NULL;
+
+	tmp = (*top);
+	while (tmp->next)
+		tmp = tmp->next;
+
+	new->prev = tmp;
+	tmp->next = new;
+
+	pop_stack(top, line_number);
+}
