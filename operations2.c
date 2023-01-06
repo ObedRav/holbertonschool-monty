@@ -63,7 +63,7 @@ void sub(stack_t **top, unsigned int line_number)
 }
 
 /**
- * div - div the top two elements of the stack
+ * division - div the top two elements of the stack
  * @top: top of stack
  * @line_number: constant int value in the structure
  */

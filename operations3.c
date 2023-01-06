@@ -1,7 +1,7 @@
 #include "monty.h"
 
 /**
- * div - div the top two elements of the stack
+ * mul - mul the top two elements of the stack
  * @top: top of stack
  * @line_number: constant int value in the structure
  */
@@ -18,7 +18,7 @@ void mul(stack_t **top, unsigned int line_number)
 }
 
 /**
- * mod - div the top two elements of the stack
+ * mod - mod the top two elements of the stack
  * @top: top of stack
  * @line_number: constant int value in the structure
  */
@@ -41,7 +41,7 @@ void mod(stack_t **top, unsigned int line_number)
  * pchar - prints the char at the top of the stack, followed by a new line
  * @top: top of stack
  * @line_number: constant int value in the structure
- */ 
+ */
 void pchar(stack_t **top, unsigned int line_number)
 {
 	int ascii;
@@ -63,13 +63,13 @@ void pchar(stack_t **top, unsigned int line_number)
  * followed by a new line
  * @top: top of stack
  * @line_number: constant int value in the structure
- */ 
+ */
 void pstr(stack_t **top, __attribute__((unused))unsigned int line_number)
 {
 	stack_t *tmp;
 	int ascii;
 
-	if(isEmpty(*top))
+	if (isEmpty(*top))
 	{
 		putchar('\n');
 		return;
@@ -96,7 +96,7 @@ void rotl(stack_t **top, unsigned int line_number)
 {
 	stack_t *tmp, *new;
 
-	if(isEmpty(*top) || isEmpty((*top)->next))
+	if (isEmpty(*top) || isEmpty((*top)->next))
 		return;
 
 	new = malloc(sizeof(stack_t));
