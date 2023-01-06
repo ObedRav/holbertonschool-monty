@@ -1,4 +1,4 @@
-# MONTY
+# Monty
 
 <p align="center">
  <img src= "https://pbs.twimg.com/media/CFYYWy6UEAE9Ow-.png" width="600" height="350" />
@@ -65,6 +65,9 @@ Examples:
 
 ## Bugs
 If you find any bug, please, let us know.
+
+## Styling
+All files have been written in the Betty Style.
 
 ## Authors
 * **Obed Rayo** [Github](https://github.com/ObedRav)
