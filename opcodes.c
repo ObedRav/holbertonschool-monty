@@ -21,6 +21,7 @@ void (*get_op_code(char *token, unsigned int line))(stack_t **, unsigned int)
 		{"mod", mod},
 		{"div", division},
 		{"mul", mul},
+		{"pchar", pchar},
 		{NULL, NULL}
 	};
 
