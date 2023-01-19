@@ -1,6 +1,6 @@
 
 <div align="center">
-    <h1>Monty</h1>
+    <h1>C - Stacks, Queues - LIFO, FIFO</h1>
     <img src="https://pbs.twimg.com/media/CFYYWy6UEAE9Ow-.png" width="600" height="350">
 </div>
 
