@@ -24,6 +24,8 @@ Monty 0.98 is a scripting language that is first compiled into Monty byte codes 
 |[helper_functions.c](./herlper_functions.c) | Contains the functions like _strcmp and others, to be called in another file|
 |[Makefile](./Makefile) | Contains the compilation and clear functions |
 |[generate_authors.sh](./generate_authors.sh) | a file with all the names and corresponding emails of individual contributors |
+|[bf](./bf) | A directory that contains some files written in brainfuck |
+|[bytecodes](./bytecodes) | Directory with the tests of the opcode |
 
 
 ## Usage
