@@ -16,6 +16,15 @@ You can install the bf interpreter:
 sudo apt-get install bf
 ```
 
+## How use the interpreter?
+**Example:**
+```
+julien@ubuntu:~/monty/bf$ bf 1000-school.bf 
+School
+julien@ubuntu:~/monty/bf$ 
+```
+
+
 ## Table of contents
 Files | Description
 ----- | -----------
