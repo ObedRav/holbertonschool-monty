@@ -63,18 +63,18 @@ Format for user to write in "testfile.m":
 ## Allowable opcodes and what they do
 | opcode | functionality |
 |---------------- | -----------|
-| push | add element to the 'top' of stack and 'end' of queue |
-| pop | remove element from 'top' of stack and 'end' of queue|
-| pall | print every member of the structure |
-| pint | prints the member value at the top of stack |
-| swap | swaps the order  of the 1st and 2nd elements in stack |
-| add | add top two member values |
-| sub | subtract the top element from the 2nd top element |
-| div | divide the 2nd element by the top element |
-| mul | multiply the top two elements of the stack |
-| mod | the remainder when the 2nd element is divided by the top element |
-| comment | there is the ability to parse comments found in bytecode ->'#'|
-| nop | opcode should do nothing |
+| **push** | add element to the 'top' of stack and 'end' of queue |
+| **pop** | remove element from 'top' of stack and 'end' of queue|
+| **pall** | print every member of the structure |
+| **pint** | prints the member value at the top of stack |
+| **swap** | swaps the order  of the 1st and 2nd elements in stack |
+| **add** | add top two member values |
+| **sub** | subtract the top element from the 2nd top element |
+| **div** | divide the 2nd element by the top element |
+| **mul** | multiply the top two elements of the stack |
+| **mod** | the remainder when the 2nd element is divided by the top element |
+| **comment** | there is the ability to parse comments found in bytecode ->'#'|
+| **nop** | opcode should do nothing |
 
 ## Bugs
 If you find any bug, please, let us know.
@@ -83,6 +83,5 @@ If you find any bug, please, let us know.
 All files have been written in the [Betty Style](https://github.com/hs-hq/Betty).
 
 ## Authors
-* **Obed Rayo** [Github](https://github.com/ObedRav)
-* **Camilo Zapata** [Github](https://github.com/ZapataCamilo)
-
+* **Obed Rayo** <a href="https://github.com/ObedRav" rel="nofollow"><img align="center" alt="github" src="https://www.vectorlogo.zone/logos/github/github-tile.svg" height="24" /></a>
+* **Camilo Zapata** <a href="https://github.com/ZapataCamilo" rel="nofollow"><img align="center" alt="github" src="https://www.vectorlogo.zone/logos/github/github-tile.svg" height="24" /></a>
