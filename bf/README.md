@@ -23,7 +23,13 @@ julien@ubuntu:~/monty/bf$ bf 1000-school.bf
 School
 julien@ubuntu:~/monty/bf$ 
 ```
-
+## Usage
+[1001-add.bf](./1001-add.bf): The total of the two digits with be one digit-long (<10)
+```
+julien@ubuntu:~/monty/bf$ bf ./1001-add.bf
+81
+9julien@ubuntu:~/monty/bf$
+```
 
 ## Table of contents
 Files | Description
