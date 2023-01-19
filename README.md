@@ -1,7 +1,9 @@
-# Monty
 
-<p align="center">
- <img src= "https://pbs.twimg.com/media/CFYYWy6UEAE9Ow-.png" width="600" height="350" />
+<div align="center">
+    <h1>Monty</h1>
+    <img src="https://pbs.twimg.com/media/CFYYWy6UEAE9Ow-.png" width="600" height="350">
+</div>
+
 
 ## Description
 Monty 0.98 is a scripting language that is first compiled into Monty byte codes (Just like Python). It relies on a unique stack, with specific instructions to manipulate it. The goal of this project is to create an interpreter for Monty ByteCodes files.
@@ -24,11 +26,21 @@ Monty 0.98 is a scripting language that is first compiled into Monty byte codes 
 |[helper_functions.c](./herlper_functions.c) | Contains the functions like _strcmp and others, to be called in another file|
 
 ## Formatting and Examples
+<details open>
+<summary> <strong> Format </strong> </summary>
+
+<br>
 
 Format for user to write in "testfile.m":
 `opcode argument`
 
-Examples:
+</details>
+
+<details open>
+<summary> <strong> Examples </strong> </summary>
+
+<br>
+
 `$ cat opcodetestfile.m`
 
 `push 1`
@@ -46,6 +58,7 @@ Examples:
 `2`
 
 `1`
+</details>
 
 ## Allowable opcodes and what they do
 | opcode | functionality |
@@ -72,3 +85,4 @@ All files have been written in the [Betty Style](https://github.com/hs-hq/Betty)
 ## Authors
 * **Obed Rayo** [Github](https://github.com/ObedRav)
 * **Camilo Zapata** [Github](https://github.com/ZapataCamilo)
+
