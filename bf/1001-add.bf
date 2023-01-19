@@ -1,5 +1,3 @@
-The total of the two digits with be one digit-long (<10)
-
 ,										Read c0
 >,										Read c1
 [                                       Start loop
