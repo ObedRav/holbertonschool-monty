@@ -3,6 +3,7 @@
 ## Table of contents
 Files | Description
 ----- | -----------
+[0.m](./0.m) | File testing the #
 [00.m](./00.m) | File testing the functions push and pall
 [3.m](./3.m) | File testing the spaces
 [06.m](./06.m) | File testing the functions pint
